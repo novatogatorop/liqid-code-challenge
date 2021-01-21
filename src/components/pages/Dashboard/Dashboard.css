@@ -1,0 +1,131 @@
+.Dashboard {
+  /*display: flex;
+  flex-wrap: wrap;*/
+}
+
+/*INTRO*/
+.intro {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.intro-col {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/*WELCOME*/
+.welcome {
+  background: #0D455D 0% 0% no-repeat padding-box;
+}
+
+.intro-welcome-wrapper {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/*INFO*/
+.info {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.intro-info-wrapper {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.intro-info-wrapper .info-box:nth-child(1){
+  margin-right: var(--space-lg);
+  margin-bottom: 0px;
+}
+
+.info-box {
+  background: #F0F0F3 0% 0% no-repeat padding-box;
+  width: 250px;
+  text-align: left;
+}
+
+/*PRODUCTS*/
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #F0F0F3 0% 0% no-repeat padding-box;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
+}
+
+.products-wrapper {
+  margin-top: var(--space-lg);
+}
+
+.sort-box {
+  display: flex;
+}
+
+.cards {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+}
+
+.card, .value {
+  display: flex;
+}
+
+.name, .value {
+  padding-right: var(--space-lg);
+}
+
+@media screen and (max-width: 960px) {
+  .intro {
+  	height: inherit;
+  	flex-direction: column;
+  }
+
+  .intro-col {
+    width: 100%;
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+  }
+
+  .intro-welcome-wrapper {
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+  }
+
+  .intro-info-wrapper {
+  	display: block;
+  	height: max-content;
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+  }
+
+  .intro-info-wrapper .info-box:nth-child(1){
+	margin-right: 0px;
+	margin-bottom: var(--space-lg);
+  }
+
+  .info-box {
+  	width: inherit;
+  	padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+  }
+}

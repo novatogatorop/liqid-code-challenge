@@ -1,0 +1,51 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font: normal normal 300 16px/24px Roboto;
+}
+
+.Pages {
+  width: 100vw;
+  background: #222222 0% 0% no-repeat padding-box;
+  color: #222222;
+  opacity: 1;
+  letter-spacing: 0px;
+  text-align: left;
+  font-size: 16px;
+}
+
+:root {
+  /*COLOR*/
+  --red: #EF233C;
+  --white: #FFFFFF;
+  --blue: #0D455D;
+  --green-light: #E5FFC7;
+  --green-dark: #5E6A4D;
+  --pink-light: #FFC7C7;
+  --pink-dark: #9F5151;
+  --grey-super-light: #F0F0F3;
+  --grey-light: #00000024;
+  --grey: #B9B9B9;
+  --grey-dark: #6C6C6C;
+  --grey-super-dark: #222222;
+
+  /*SPACER*/
+  --space-sm: 10px;
+  --space-md: 20px;
+  --space-lg: 30px;
+
+  /*FONT-WEIGHT*/
+  --fw-light: light;
+  --fw-regular: regular;
+}
+
+@media screen and (max-width: 960px) {
+  .Pages {
+  }
+}
